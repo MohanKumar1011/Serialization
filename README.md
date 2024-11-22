@@ -32,19 +32,25 @@ class Student
         this.name = name;  
     }  
 }  
+
 public class SerializeExample  
+
 {  
+
     public static void Main(string[] args)  
+    
     {  
+
         FileStream stream = new FileStream("e:\\sss.txt", FileMode.OpenOrCreate);  
         BinaryFormatter formatter=new BinaryFormatter();  
-          
         Student s = new Student(101, "sonoo");  
         formatter.Serialize(stream, s);  
   
         stream.Close();  
     }  
 }
+
+
 
 DeSerialization : 
 Definition : 
@@ -76,13 +82,12 @@ public class DeserializeExample
 {  
     public static void Main(string[] args)  
     {  
+    
         FileStream stream = new FileStream("e:\\sss.txt", FileMode.OpenOrCreate);  
         BinaryFormatter formatter=new BinaryFormatter();  
-  
         Student s=(Student)formatter.Deserialize(stream);  
         Console.WriteLine("Rollno: " + s.rollno);  
         Console.WriteLine("Name: " + s.name);  
-  
         stream.Close();  
     }  
 }  
@@ -112,6 +117,7 @@ using System.Text.Json;
 
 public class Purchase
 {
+
     public string ProductName { get; set; }
     public DateTime DateTime { get; set; }
     public decimal ProductPrice { get; set; }
@@ -123,10 +129,10 @@ public class Program
     {
         Purchase purchase1 = new Purchase()
         {
+	
             ProductName = "Orange juse",
             DateTime = DateTime.UtcNow,
             ProductPrice = 2.3m
-
         };
         var options = new JsonSerializerOptions();
         options.WriteIndented = true;
