@@ -14,6 +14,8 @@ In C#, serialization is the process of converting object into byte stream so tha
 C# SerializableAttribute 
 To serialize the object, you need to apply SerializableAttribute attribute to the type. If you don't apply SerializableAttribute attribute to the type, SerializationException exception is thrown at runtime.
 
+![image](https://github.com/user-attachments/assets/2f48c0e8-faa2-4094-807a-26d4c39ed2f2)
+
 
 C# Serialization example
 Let's see the simple example of serialization in C# where we are serializing the object of Student class. Here, we are going to use BinaryFormatter.Serialize(stream, reference) method to serialize the object.
