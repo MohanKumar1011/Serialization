@@ -7,6 +7,8 @@ In C#, serialization is the process of converting object into byte stream so tha
 
 
 ![image](https://github.com/user-attachments/assets/2f48c0e8-faa2-4094-807a-26d4c39ed2f2)
+![image](https://github.com/user-attachments/assets/b19588ba-e720-4fcc-8ac4-1c4444b21ebe)
+
 
 ### C# SerializableAttribute 
 To serialize the object, you need to apply SerializableAttribute attribute to the type. If you don't apply SerializableAttribute attribute to the type, SerializationException exception is thrown at runtime.
@@ -56,6 +58,7 @@ public class SerializeExample
 In C# programming, deserialization is the reverse process of serialization. It means you can read the object from byte stream. Here, we are going to use BinaryFormatter.Deserialize(stream) method to deserialize the stream
 
 ![image](https://github.com/user-attachments/assets/c957e99d-5648-4fce-ba41-4cb2bff7e661)
+![image](https://github.com/user-attachments/assets/74d35c00-24f0-4f9b-b3b4-7aeb322b58a3)
 
 
 ### C# SerializableAttribute 
