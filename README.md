@@ -1,6 +1,6 @@
 # Serialization and DeSerialization 
 
-## Serialization : 
+##1. Serialization : 
 
   ### Definition : 
 In C#, serialization is the process of converting object into byte stream so that it can be saved to memory, file or database. The reverse process of serialization is called deserialization.
@@ -52,7 +52,7 @@ public class SerializeExample
 
 
 
-## DeSerialization : 
+##2. DeSerialization : 
 ### Definition : 
 In C# programming, deserialization is the reverse process of serialization. It means you can read the object from byte stream. Here, we are going to use BinaryFormatter.Deserialize(stream) method to deserialize the stream
 
